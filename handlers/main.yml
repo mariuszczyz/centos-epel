@@ -1,0 +1,7 @@
+---
+# handlers file for mariuszczyz.centos-epel
+
+- name: yum-clean-metadata
+  command: yum clean metadata
+  args:
+    warn: no

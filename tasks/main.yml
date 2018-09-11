@@ -1,0 +1,16 @@
+---
+# tasks file for mariuszczyz.centos-epel
+
+- name: Install EPEL repository
+  yum:
+    name: epel-release
+    state: present
+  notify: yum-clean-metadata
+  when: INSTALL_EPEL == true
+
+- name: Uninstall EPEL repository
+  yum:
+    name: epel-release
+    state: absent
+  notify: yum-clean-metadata
+  when: UNINSTALL_EPEL == true
