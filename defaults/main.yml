@@ -1,8 +1,2 @@
 ---
 # defaults file for mariuszczyz.centos-epel
-
-# set to 'true' to install, leave empty to skip
-INSTALL_EPEL:
-
-# set to 'true' to remove, leave empty to skip
-UNINSTALL_EPEL:

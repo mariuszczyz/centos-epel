@@ -6,17 +6,13 @@ That's it, that's all it does.
 
 Some setups require EPEL, others don't so the only way to do it is to make it into a seperate role and install on demand.
 
-Uninstall option also available in case it has to be removed due to conflicts or in favor of other 3rd party repository.
-
 ## Requirements
 
 None.
 
 ## Role Variables
 
-`INSTALL_EPEL` set to `true` if it needs to be installed.  
-
-`UNINSTALL_EPEL` set to `true` if it needs to be installed, otherwise leave empty.
+None.
 
 ## Dependencies
 
