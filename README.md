@@ -1,4 +1,4 @@
-## CentOS 7 EPEL7 Repository Install Role
+# CentOS 7 EPEL7 Repository Install Role
 
 Install or uninstall EPEL7 repository.
 
@@ -14,7 +14,8 @@ None.
 
 ## Role Variables
 
-`INSTALL_EPEL` set to `true` if it needs to be installed.
+`INSTALL_EPEL` set to `true` if it needs to be installed.  
+
 `UNINSTALL_EPEL` set to `true` if it needs to be installed, otherwise leave empty.
 
 ## Dependencies
@@ -27,17 +28,20 @@ Fetch this role from Ansible Galaxy:
 
 `ansible-galaxy install mariuszczyz.centos-epel`
 
-
 In playbook.yml:
 
-```
+```bash
 - hosts: servers
   roles:
-    - { role: mariuszczyz.centos-common, tags: ['centos-common'] }
-```
+    - { role: mariuszczyz.centos-epel, tags: ['centos-epel'] }```
+
 Run it:
 
-`ansible-playbook -i hosts playbook.yml --user root --ask-pass --ask-vault-pass --limit=servers`
+`ansible-playbook -i hosts playbook.yml --user root --ask-pass --limit=servers`
+
+Optionally, run just this role:
+
+`ansible-playbook -i hosts playbook.yml --user root --ask-pass --limit=servers --tags=centos-epel`
 
 ## License
 
@@ -45,5 +49,6 @@ BSD
 
 ## Author Information
 
-Author: Mariusz Czyz
+Author: Mariusz Czyz  
+
 Date: 09/2018
