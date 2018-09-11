@@ -33,7 +33,8 @@ In playbook.yml:
 ```bash
 - hosts: servers
   roles:
-    - { role: mariuszczyz.centos-epel, tags: ['centos-epel'] }```
+    - { role: mariuszczyz.centos-epel, tags: ['centos-epel'] }
+```
 
 Run it:
 
